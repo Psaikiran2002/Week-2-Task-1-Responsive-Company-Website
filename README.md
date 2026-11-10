@@ -22,3 +22,5 @@ Add screenshots in a `screenshots` folder.
 ### live project link
   
   https://claude.ai/artifact/WPqYsnsjx4kPtTs1YdAdg7.
+### GITHUB LIVE LINK
+https://psaikiran2002.github.io/Week-2-Task-1-Responsive-Company-Website/
