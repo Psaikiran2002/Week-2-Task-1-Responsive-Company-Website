@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- This line makes the page fit phone screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Bluewave Technologies</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER AND MENU (same on every page) ===== -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Bluewave</a>
+      <button id="menu-button">Menu</button>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Email: hello@bluewave.example<br>
+         Phone: +91 7013683021<br>
+         Address: Visakhapatnam, Andhra Pradesh, India</p>
+
+      <!-- The form: JavaScript in script.js checks it -->
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <span class="error" id="name-error"></span>
+
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <span class="error" id="email-error"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+        <span class="error" id="message-error"></span>
+
+        <p><button type="submit" class="button">Send Message</button></p>
+        <div id="success">Thank you! Your message was checked successfully.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer>
+    <p>&copy; <span id="year">2026</span> Bluewave Technologies. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

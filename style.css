@@ -1,0 +1,203 @@
+/* ===== 1. BASIC SETTINGS ===== */
+/* Applies to every element: makes width calculations easier */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;                      /* remove default white space around the page */
+  font-family: Arial, sans-serif; /* a font every computer has */
+  line-height: 1.6;               /* space between lines of text */
+  color: #222222;
+}
+
+h1, h2, h3 {
+  color: #0b2545;                 /* dark blue headings */
+}
+
+a {
+  color: #0e7c9b;
+}
+
+/* ===== 2. LAYOUT HELPER ===== */
+/* Keeps content in the middle and not too wide */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;                 /* auto left/right = centered */
+  padding: 0 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.gray {
+  background-color: #e8f4f8;      /* light blue background for some sections */
+}
+
+/* ===== 3. HEADER AND MENU ===== */
+header {
+  background-color: #0b2545;
+  padding: 15px 0;
+}
+
+/* Flexbox puts logo and menu side by side */
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;               /* remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;                  /* menu items in a row */
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {                    /* hover = mouse over, active = current page */
+  color: #f2a93b;
+}
+
+/* The Menu button is hidden on big screens */
+#menu-button {
+  display: none;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* ===== 4. HERO (big top section on Home) ===== */
+.hero {
+  background-color: #0b2545;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 40px;
+}
+
+/* ===== 5. BUTTON ===== */
+.button {
+  display: inline-block;
+  background-color: #f2a93b;
+  color: #0b2545;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #d9942c;
+}
+
+/* ===== 6. CARDS ===== */
+/* flex-wrap lets cards move to the next line on small screens,
+   so this part is responsive without extra code */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 250px;                /* grow, shrink, start at 250px wide */
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ===== 7. FORM ===== */
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+#success {
+  display: none;                  /* hidden until the form is sent */
+  background-color: #d4f5dd;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+/* ===== 8. FOOTER ===== */
+footer {
+  background-color: #0b2545;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ===== 9. MOBILE STYLES ===== */
+/* These rules only work when the screen is 700px wide or less */
+@media (max-width: 700px) {
+  #menu-button {
+    display: block;               /* show the Menu button */
+  }
+
+  nav ul {
+    display: none;                /* hide the menu until button is clicked */
+    flex-direction: column;       /* stack menu items */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #0b2545;
+    padding: 15px 20px;
+  }
+
+  nav ul.show {                   /* JavaScript adds this class on click */
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  header {
+    position: relative;
+  }
+}
