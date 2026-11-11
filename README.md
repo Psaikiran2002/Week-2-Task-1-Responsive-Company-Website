@@ -58,7 +58,7 @@ Footer year updated automatically with JavaScript
 https://claude.ai/artifact/RR7vAVbEaKLCRNw6AEos7Q
 
 ### Github Link
-
+ https://psaikiran2002.github.io/Week-2-Task-1-Responsive-Company-Website/
 
 ### Screenshots
 
