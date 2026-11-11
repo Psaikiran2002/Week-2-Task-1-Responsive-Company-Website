@@ -55,7 +55,7 @@ Contact form validation:
 Footer year updated automatically with JavaScript
 
 ### Live Link
-https://claude.ai/artifact/1bewEWLGKWjeFxNx7pQDDh
+https://claude.ai/artifact/RR7vAVbEaKLCRNw6AEos7Q
 
 ### Github Link
 
