@@ -1,19 +1,71 @@
 # Bluewave Technologies – Responsive Company Website
 
-A 4-page responsive company website built as Task 1 of the Week 2 Full Stack Development internship assignments. It is made with plain HTML, CSS and JavaScript, and includes a hamburger menu for mobile and a validated contact form.
+A simple, responsive 4-page website for a fictional IT company, **Bluewave Technologies**, built with plain **HTML, CSS and JavaScript** (no frameworks or libraries).
 
-| Page | File | Live link |
-|---|---|---|
-| Home | [`index.html`](index.html) | https://psaikiran2002.github.io/your-repository-name/ |
-| About | [`about.html`](about.html) | https://psaikiran2002.github.io/your-repository-name/about.html |
-| Services | [`services.html`](services.html) | https://psaikiran2002.github.io/your-repository-name/services.html |
-| Contact | [`contact.html`](contact.html) | https://psaikiran2002.github.io/your-repository-name/contact.html |
+## Features
 
-> Replace `your-repository-name` with your repository name after enabling GitHub Pages.
+- **4 pages:** Home, About, Services, Contact
+- **Responsive design:** works on phones, tablets and desktops (flexbox layout and a media query at 700px)
+- **Hamburger menu:** the navigation collapses into a "Menu" button on small screens
+- **Consistent header and footer** on every page, with the current page highlighted in the menu
+- **Contact form validation** using JavaScript:
+  - Name cannot be empty
+  - Email must contain an `@`
+  - Message must be at least 10 characters
+  - A success message is shown when the form is valid
+- **Auto-updating footer year** using JavaScript
 
----
+## Pages
 
-## Repository Structure
+| Page | File | What it contains |
+|------|------|------------------|
+| Home | `index.html` | Hero banner, "What We Do" service cards, call-to-action |
+| About | `about.html` | Company story, values cards, team cards |
+| Services | `services.html` | Six service cards and a call-to-action |
+| Contact | `contact.html` | Contact details and the validated contact form |
+
+## Technologies Used
+
+- **HTML5** – page structure
+- **CSS3** – styling, flexbox, media queries
+- **JavaScript (ES5)** – mobile menu, form validation, footer year
+
+## How to Run
+
+1. Download or clone this repository:
+   ```bash
+   git clone <your-repository-url>
+   ```
+2. Open the project folder.
+3. Double-click `index.html` to open it in your browser (Chrome, Edge, Firefox, etc.).
+
+No installation or server is needed.
+
+## How It Works
+
+- **Mobile menu:** `script.js` adds or removes the `show` class on the menu list when the Menu button is clicked. The CSS only displays the button and hides the menu on screens 700px wide or less.
+- **Cards:** the `.cards` container uses `display: flex` with `flex-wrap: wrap`, so cards automatically move to the next line on small screens.
+- **Form validation:** when the form is submitted, `script.js` stops the page from reloading, checks each field, shows red error messages under any invalid field, and shows a green success message if everything is valid.
+
+## Colors Used
+
+| Color | Hex | Used for |
+|-------|-----|----------|
+| Dark blue | `#0b2545` | Header, footer, hero, headings |
+| Teal blue | `#0e7c9b` | Links |
+| Orange | `#f2a93b` | Buttons, active menu link |
+| Light blue | `#e8f4f8` | Section backgrounds |
+
+## Testing Checklist
+
+- [x] All four pages open and link to each other
+- [x] Layout looks good on desktop
+- [x] Menu button appears and works below 700px width
+- [x] Contact form shows errors for empty or invalid input
+- [x] Contact form shows a success message for valid input
+
+
+## Project Structure
 
 ```
 bluewave-website/
@@ -33,66 +85,48 @@ bluewave-website/
 └── README.md
 ```
 
-## Objective
-Build a responsive 4-page company website with a shared header and footer, a mobile hamburger menu, and a contact form with JavaScript validation.
+### live project link
+  
+  https://claude.ai/artifact/WPqYsnsjx4kPtTs1YdAdg7.
 
-### Tech Stack
-HTML5
-CSS3 (Flexbox, Media Queries)
-JavaScript (DOM and Events)
+### live github link
 
-### Features Implemented
-Four pages: Home, About, Services and Contact
-Responsive layout using Flexbox, with cards that wrap on small screens
-Hamburger "Menu" button that shows and hides the navigation on screens 700px wide or less
-Active page link highlighted in the navigation
-Same header and footer on every page
-Contact form validation:
-- Name must not be empty
-- Email must contain `@`
-- Message must be at least 10 characters
-- Error messages shown under each field and a success message when the form is valid
-Footer year updated automatically with JavaScript
+  https://psaikiran2002.github.io/Week-2-Task-1-Responsive-Company-Website/
 
-### Live Link
-https://claude.ai/artifact/RR7vAVbEaKLCRNw6AEos7Q
+  
+## Screenshots
 
-### Github Link
- https://psaikiran2002.github.io/Week-2-Task-1-Responsive-Company-Website/
+| Home | About |
+|------|-------|
+| ![Home page](screenshots/home-landing_page.png) | ![About page](screenshots/about_page.png) |
 
-### Screenshots
+| Services | Contact |
+|----------|---------|
+| ![Services page](screenshots/services_page.png) | ![Contact page](screenshots/contact_page.png) |
 
-Quick links: 
-
-![Home page](screenshots/home-landing_page.png)
-![About page](screenshots/about_page.png)
-![Services page](screenshots/services_page.png)
-![Contact page](screenshots/contact_page.png)
-
-## Setup and Run Instructions
-
-No build tools or installation are required.
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/psaikiran2002/your-repository-name.git
-   cd your-repository-name
-   ```
-2. Open the `index.html` file in any web browser.
-
-## Deployment (GitHub Pages)
-
-1. Push the repository to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Source**, choose the `main` branch and the `/ (root)` folder, then save.
-4. Your website will be live at `https://psaikiran2002.github.io/your-repository-name/`.
 
 ## Author
 
 **Pilli Sai Kiran**
-Web Developer, Visakhapatnam, Andhra Pradesh, India
+Visakhapatnam, Andhra Pradesh, India
 
-- Education: Computer Science / IT, Raghu Engineering College (Autonomous), Visakhapatnam
-- Skills: HTML, CSS, JavaScript, Bootstrap, Angular, Python, Django, MySQL, MongoDB, SQL Server
-- LinkedIn: https://www.linkedin.com/in/pilli-saikiran-500a61235
-- GitHub: https://github.com/psaikiran2002
+## License
+
+This project was created for learning purposes.
+## Bluewave Technologies - Responsive Company Website
+
+A beginner-friendly multi-page website: Home, About, Services and Contact.
+Made with plain HTML, CSS and JavaScript. Bluewave is a made-up company; change the text to your own.
+
+## Files
+- `index.html`, `about.html`, `services.html`, `contact.html` - the four pages
+- `css/style.css` - all the styling (with comments)
+- `js/script.js` - mobile menu, form check, footer year (with comments)
+
+## How to run
+Double-click `index.html` to open it in your browser.
+
+## What I practised
+- HTML: headings, paragraphs, links, sections, forms
+- CSS: flexbox, cards, colors, media query for mobile
+- JavaScript: click events, form validation, changing page content
