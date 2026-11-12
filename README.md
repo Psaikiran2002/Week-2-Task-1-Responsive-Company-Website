@@ -95,14 +95,11 @@ bluewave-website/
 
   
 ## Screenshots
+screenshots/home-landing_page.png
+screenshots/about_page.png
 
-| Home | About |
-|------|-------|
-| ![Home page](screenshots/home-landing_page.png) | ![About page](screenshots/about_page.png) |
-
-| Services | Contact |
-|----------|---------|
-| ![Services page](screenshots/services_page.png) | ![Contact page](screenshots/contact_page.png) |
+screenshots/services_page.png
+screenshots/contact_page.png
 
 
 ## Author
